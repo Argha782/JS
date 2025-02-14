@@ -14,6 +14,6 @@ let user1 = {
 let user2 = user1
 user2.email = "argha23@gmail.com"
 
-console.log(user1);
+console.log(user1.email);
 console.log(user2);
 
