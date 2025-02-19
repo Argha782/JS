@@ -53,8 +53,8 @@ course= {
 const{instructor:ins}=course
 console.log(ins);
 
-{
-    "name": "hitesh",
-    "coursename": "dsa",
-    "price": "free"
-}                               // json
+// {
+//     "name": "hitesh",
+//     "coursename": "dsa",
+//     "price": "free"
+// }                               // json

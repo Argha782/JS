@@ -19,11 +19,9 @@ let myarray =[0, 1, 2, 3, 4, 5]
 // console.log(myarray.splice(2, 2, 9));
 // console.log(myarray);
 // console.log(myarray.indexOf(2));
-myarray1 =[true, false, 0, "Argha"]
+// myarray1 =[true, false, 0, "Argha"]
 // console.log(cars.concat(myarray));
 // console.log("A",cars.concat(myarray,myarray1));
-myarray2=(...myarray,...myarray1);
-console.log(myarray2);
-// console.log(myarray);
-// console.log(myarray.slice(1,3));
+console.log(myarray);
+console.log(myarray.slice(1,3));
 
