@@ -53,8 +53,8 @@ handleobj(item)
 
 const newArr=[100,200,200]
 function handlearray(anyArr){           // functions with array
-    // console.log(anyArr[1]);
+//* console.log(anyArr[1]);
     return anyArr[1]
 }
-// handlearray(newArr)
+//* handlearray(newArr)
 console.log(handlearray(newArr));
