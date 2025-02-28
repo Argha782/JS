@@ -6,6 +6,30 @@
     <title>DOM Learning</title>
     <link rel="stylesheet" href="23dom.css">
 </head>
+<!--
+document.getElementById('heading')
+<h1 id=​"heading" style=​"background-color:​ green;​ border-radius:​ 8px;​ padding:​ 15px;​">​…​</h1>​
+document.getElementById('heading').getAttribute('id')
+'heading'
+heading.style.backgroundColor ='Green'
+'Green' 
+heading.style.borderRadius ="15px"
+'15px'
+heading.textContent
+'DOM Learning test case'
+heading.innerText
+'DOM Learning'
+heading.innerHTML
+'DOM Learning <span style="display: none;">test case</span>'
+ document.querySelector('h2')
+<h2>​Lorem ipsum dolor sit amet consectetur adipisicing.​</h2>​
+ document.querySelectorAll('h2')
+NodeList(2) [h2, h2]
+ document.querySelector('input[type="password"]')
+<input type=​"password" name id>​
+ document.querySelector('ul')
+<ul style=​"background-color:​ white;​">​…​</ul>​   -->
+
 <body class="bg-black">
     <div>
         <h1 id="heading">DOM Learning <span style="display: none;">test case</span></h1>
@@ -13,6 +37,38 @@
         <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
         <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
         <input type="password" name="" id="">
+        <ul>
+            <!-- const myul = document.querySelector('ul')
+            undefined
+            myul.style.backgroundColor="white"
+            'white'  -->
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li> <!-- const tempLILIST = document.querySelectorAll('li')
+                                    undefined
+                                    tempLILIST.style.color='green'
+                                    tempLILIST[0].style.color='green'
+                                    'green'
+                                    tempLILIST[1].style.color='red'
+                                    'red'
+                                    tempLILIST[2].style.color='blue'
+                                    'blue' -->
+        </ul>
+        <!--
+        const tempClassList = document.getElementsByClassName('list-item')
+        undefined
+        tempClassList
+        HTMLCollection(3) [li.list-item, li.list-item, li.list-item]
+        Array.from(tempClassList)
+        (3) [li.list-item, li.list-item, li.list-item]
+        myConverteedArray=Array.from(tempClassList)
+        (3) [li.list-item, li.list-item, li.list-item]
+        myConverteedArray.forEach((li)=>li.style.color="orange")
+        undefined
+        const myh2=document.querySelectorAll('#History')
+        myh2.forEach((h)=>h.style.color='red')
+        undefined      -->
     </div>
 </body>
+
 </html>
