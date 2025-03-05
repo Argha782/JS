@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit and Delete Elements</title>
+</head>
+<body>
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addlang(lang){
+        const li =document.createElement('li');
+        li.innerHTML=`${lang}`
+        document.querySelector('.language').
+        appendChild(li)
+    }
+    addlang("Python")
+    addlang("C++")
+
+    function addOptilang(lang){
+        const li =document.createElement('li');
+        li.appendChild(document.createTextNode(lang))
+        document.querySelector('.language').appendChild(li)
+    }
+    addlang("Java")
+    addlang("Fortran")
+    addlang("Cobalt")
+
+    //  Edit
+
+    const secondlang =document.querySelector("li:nth-child(2)")
+    // secondlang.innerHTML="Mojo"
+    const newli = document.createElement('li')
+    newli.textContent="Mojo"
+    secondlang.replaceWith(newli)
+
+    //  Remove
+
+    const rem = document.querySelector("li:last-child")
+    rem.remove()
+
+</script>
+</html>
