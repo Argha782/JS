@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Argha</h1>
+    <label for="name">Name</label>
+    <!-- <input type="text" id="name" class="name" placeholder="You Name">
+    <button id="id" onclick="displayName()">Submit</button> -->
+    <button id="stop" >STOP</button>
+</body>
+<script>
+    const greet=()=>   {
+        console.log("Hello ");
+    }
+    setTimeout(greet,2000)
+    const changeText=()=>{
+        document.querySelector('h1').innerHTML=" My name is Argha Saha"
+    }
+    const changeMe= setTimeout(changeText,2000)
+    document.querySelector('#stop').addEventListener('click',()=>{
+        clearInterval(changeMe)
+        console.log("Stopped");
+        
+    })
+    //  const displayName=function()
+    // {
+    //     let name=document.querySelector('#name').value
+    //     console.log("Hello "+name);
+    // }
+</script>
+</html>
