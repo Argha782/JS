@@ -12,5 +12,4 @@ window.addEventListener('keydown',(e)=>{
     <td> ${e.code}</td>
   </tr>
 </table>`
-
 })

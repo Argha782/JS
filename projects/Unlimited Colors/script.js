@@ -25,6 +25,7 @@ const randomColor = function () {
     console.log("Color changing stopped");
     clearInterval(intervalId);
     intervalId = null;
+    
   };
   
   document.querySelector('#start').addEventListener('click', startChangingColor);
